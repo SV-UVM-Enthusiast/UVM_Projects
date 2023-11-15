@@ -1,0 +1,3 @@
+  CREATE_STREAM @0 {NAME:top_seq T:Transactions SCOPE:uvm_test_top.env.top_sqr_i STREAM:1019}
+  CREATE_STREAM @0 {NAME:top_seq T:Transactions SCOPE:uvm_test_top.env.write_agent_i.sqr STREAM:1028}
+  CREATE_STREAM @335 {NAME:top_seq T:Transactions SCOPE:uvm_test_top.env.read_agent_i.sqr STREAM:1214}

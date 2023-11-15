@@ -1,0 +1,164 @@
+# vsim -novopt -suppress 12110 top -sv_lib C:/questasim64_10.7c/uvm-1.2/win64/uvm_dpi "+UVM_TESTNAME=fifo_wr_rd_top_sqr_test" -l comp.log 
+# Start time: 21:02:50 on Oct 22,2023
+# Loading C:/Users/A/AppData/Local/Temp\A@DESKTOP-QN14BKJ_dpi_9128\win64_gcc-10.3.0\export_tramp.dll
+# ** Warning: (vsim-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing F:/Project/UVM/Asynchronous_Fifo/work.top
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing F:/Project/UVM/Asynchronous_Fifo/work.top_sv_unit
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing F:/Project/UVM/Asynchronous_Fifo/work.uvm_pkg
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Loading sv_std.std
+# Loading work.uvm_pkg
+# Loading work.top_sv_unit
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Loading work.top
+# Refreshing F:/Project/UVM/Asynchronous_Fifo/work.async_fifo_intf
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Loading work.async_fifo_intf
+# Refreshing F:/Project/UVM/Asynchronous_Fifo/work.async_fifo
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Loading work.async_fifo
+# ** Warning: (vsim-3764) Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit::write_seq File: write_seq_lib.sv Line: 26
+# ** Warning: (vsim-3764) Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit::write_delay_seq File: write_seq_lib.sv Line: 40
+# ** Warning: (vsim-3764) Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit::read_seq File: read_seq_lib.sv Line: 26
+# ** Warning: (vsim-3764) Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit::read_delay_seq File: read_seq_lib.sv Line: 40
+# Compiling C:/Users/A/AppData/Local/Temp\A@DESKTOP-QN14BKJ_dpi_9128\win64_gcc-10.3.0\exportwrapper.c
+# Loading C:/Users/A/AppData/Local/Temp\A@DESKTOP-QN14BKJ_dpi_9128\win64_gcc-10.3.0\vsim_auto_compile.dll
+# Loading C:/questasim64_10.7c/uvm-1.2/win64/uvm_dpi.dll
+# UVM_INFO F:/uvm_source_code/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test fifo_wr_rd_top_sqr_test...
+# UVM_INFO F:/uvm_source_code/uvm-1.2/src/base/uvm_root.svh(579) @ 0: reporter [UVMTOP] UVM testbench topology:
+# ---------------------------------------------------------------
+# Name                       Type                     Size  Value
+# ---------------------------------------------------------------
+# uvm_test_top               fifo_wr_rd_top_sqr_test  -     @335 
+#   env                      async_fifo_env           -     @351 
+#     read_agent_i           read_agent               -     @374 
+#       cov                  read_cov                 -     @705 
+#         analysis_imp       uvm_analysis_imp         -     @714 
+#       drv                  read_drv                 -     @530 
+#         ap_port            uvm_analysis_port        -     @725 
+#         rsp_port           uvm_analysis_port        -     @549 
+#         seq_item_port      uvm_seq_item_pull_port   -     @539 
+#       mon                  read_mon                 -     @696 
+#         ap_port            uvm_analysis_port        -     @736 
+#       sqr                  uvm_sequencer            -     @559 
+#         rsp_export         uvm_analysis_export      -     @568 
+#         seq_item_export    uvm_seq_item_pull_imp    -     @686 
+#         arbitration_queue  array                    0     -    
+#         lock_queue         array                    0     -    
+#         num_last_reqs      integral                 32    'd1  
+#         num_last_rsps      integral                 32    'd1  
+#     sbd                    fifo_sbd                 -     @383 
+#       imp_read             uvm_analysis_imp_read    -     @761 
+#       imp_write            uvm_analysis_imp_write   -     @751 
+#     top_sqr_i              top_sqr                  -     @392 
+#       rsp_export           uvm_analysis_export      -     @401 
+#       seq_item_export      uvm_seq_item_pull_imp    -     @519 
+#       arbitration_queue    array                    0     -    
+#       lock_queue           array                    0     -    
+#       num_last_reqs        integral                 32    'd1  
+#       num_last_rsps        integral                 32    'd1  
+#     write_agent_i          write_agent              -     @365 
+#       cov                  write_cov                -     @952 
+#         analysis_imp       uvm_analysis_imp         -     @961 
+#       drv                  write_drv                -     @777 
+#         ap_port            uvm_analysis_port        -     @972 
+#         rsp_port           uvm_analysis_port        -     @796 
+#         seq_item_port      uvm_seq_item_pull_port   -     @786 
+#       mon                  write_mon                -     @943 
+#         ap_port            uvm_analysis_port        -     @983 
+#       sqr                  uvm_sequencer            -     @806 
+#         rsp_export         uvm_analysis_export      -     @815 
+#         seq_item_export    uvm_seq_item_pull_imp    -     @933 
+#         arbitration_queue  array                    0     -    
+#         lock_queue         array                    0     -    
+#         num_last_reqs      integral                 32    'd1  
+#         num_last_rsps      integral                 32    'd1  
+# ---------------------------------------------------------------
+# 
+#                   45 : storing 2980 in to write_txQ
+#                   65 : storing 235e in to write_txQ
+#                   85 : storing 394a in to write_txQ
+#                  105 : storing 507c in to write_txQ
+#                  125 : storing 1721 in to write_txQ
+#                  145 : storing a3ab in to write_txQ
+#                  165 : storing 5c90 in to write_txQ
+#                  185 : storing efdb in to write_txQ
+#                  205 : storing 1152 in to write_txQ
+#                  225 : storing fe55 in to write_txQ
+#                  245 : storing 4a90 in to write_txQ
+#                  265 : storing 8efc in to write_txQ
+#                  285 : storing 2656 in to write_txQ
+#                  305 : storing 198c in to write_txQ
+#                  325 : storing fbec in to write_txQ
+#                  345 : storing bfba in to write_txQ
+#                  365 : storing 2980 in to read_txQ
+#                  385 : storing 235e in to read_txQ
+#                  405 : storing 394a in to read_txQ
+#                  425 : storing 507c in to read_txQ
+#                  445 : storing 1721 in to read_txQ
+#                  465 : storing a3ab in to read_txQ
+#                  485 : storing 5c90 in to read_txQ
+#                  505 : storing efdb in to read_txQ
+#                  525 : storing 1152 in to read_txQ
+#                  545 : storing fe55 in to read_txQ
+#                  565 : storing 4a90 in to read_txQ
+#                  585 : storing 8efc in to read_txQ
+#                  605 : storing 2656 in to read_txQ
+#                  625 : storing 198c in to read_txQ
+#                  645 : storing fbec in to read_txQ
+#                  665 : storing bfba in to read_txQ
+# UVM_INFO F:/uvm_source_code/uvm-1.2/src/base/uvm_objection.svh(1270) @ 705: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO test_lib.sv(20) @ 705: uvm_test_top [STATUS] TEST PASS
+# UVM_INFO test_lib.sv(21) @ 705: uvm_test_top [STATUS] TEST PASS, num_matches=16, num_mismatches=0
+# UVM_INFO F:/uvm_source_code/uvm-1.2/src/base/uvm_report_server.svh(847) @ 705: reporter [UVM/REPORT/SERVER] 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :    6
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [RNTST]     1
+# [STATUS]     2
+# [TEST_DONE]     1
+# [UVM/RELNOTES]     1
+# [UVMTOP]     1
+# 
+# ** Note: $finish    : F:/uvm_source_code/uvm-1.2/src/base/uvm_root.svh(517)
+#    Time: 705 ns  Iteration: 67  Instance: /top
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at F:/uvm_source_code/uvm-1.2/src/base/uvm_root.svh line 517
+quit
+# End time: 21:06:52 on Oct 22,2023, Elapsed time: 0:04:02
+# Errors: 0, Warnings: 5

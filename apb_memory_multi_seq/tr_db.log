@@ -1,0 +1,4 @@
+  CREATE_STREAM @0 {NAME:apb_multi_seq T:Transactions SCOPE:uvm_test_top.env.agent.sqr STREAM:607}
+  CREATE_STREAM @0 {NAME:apb_multi_seq T:Transactions SCOPE:uvm_test_top.env.agent.sqr STREAM:607}
+  CREATE_STREAM @0 {NAME:seq T:Transactions SCOPE:uvm_test_top.env.agent.sqr STREAM:602}
+  CREATE_STREAM @0 {NAME:seq T:Transactions SCOPE:uvm_test_top.env.agent.sqr STREAM:602}
