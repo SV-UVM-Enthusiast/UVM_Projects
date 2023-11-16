@@ -19,6 +19,7 @@ Unlock the potential of Universal Verification Methodology (UVM) in these two co
 
     **FIFO Wr-Rd Top Sequence Test:**
       Experience a specialized test scenario utilizing a virtual sequence and sequencer, showcasing the capabilities of the Asynchronous FIFO design in a complex, orchestrated environment.
+![Wave_signal](https://github.com/SV-UVM-Enthusiast/UVM_Projects/assets/142294063/9f8ade26-9f4d-40da-9cda-0e469ee1318d)
 
 ****Memory Verification****
 Ensure the reliability of your Memory module through rigorous UVM test cases:
